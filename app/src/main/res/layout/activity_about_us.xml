@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="20dp"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/visi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visi"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito_sans"
+        />
+
+    <TextView
+        android:id="@+id/txtvisi"
+        android:layout_below="@id/visi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visi"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_sans"
+        />
+
+    <TextView
+        android:layout_below="@id/txtvisi"
+        android:id="@+id/misi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Misi"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito_sans"
+        />
+
+    <TextView
+        android:id="@+id/txtmisi"
+        android:layout_below="@id/misi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/misi"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_sans"
+        />
+
+    <TextView
+        android:layout_below="@id/txtmisi"
+        android:id="@+id/hotline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontak"
+        android:textSize="18dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito_sans"
+        />
+
+    <TextView
+        android:id="@+id/txthotline"
+        android:layout_below="@id/hotline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotline"
+        android:layout_centerInParent="true"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/solid"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

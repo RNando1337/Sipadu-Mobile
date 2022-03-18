@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewBerita">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_below="@id/gambar"
+                android:id="@+id/jdlbrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengaduan Masyarakat"
+                android:textSize="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="2dp"
+                />
+            <TextView
+                android:id="@+id/tgl"
+                android:layout_below="@+id/jdlbrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/solid"
+                android:text="&#xf073;"
+                android:textSize="11dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:id="@+id/desk"
+                    android:layout_below="@+id/tgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponsePetugas">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/upfoto"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Petugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Response Petugas"
+        android:textSize="18dp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_below="@id/gambar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/Tanggal_verifikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Tanggal"
+        android:layout_below="@id/Petugas"
+        android:layout_alignLeft="@id/Petugas"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/desk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi petugas"
+        android:layout_below="@id/Tanggal_verifikasi"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

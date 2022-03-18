@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context=".EditStatus">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/kategori"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kategori"
+        android:layout_below="@+id/imageView3"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary"
+        android:layout_marginBottom="10dp"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/kat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/txtJDLGambar"
+        android:layout_below="@id/kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Bukti Pencurian"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/primary"/>
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_below="@id/txtJDLGambar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_putus"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upfoto"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ambillokasi"
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/primary"
+        android:layout_marginBottom="20dp"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/txtambillokasi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambil Koordinat Lokasi"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            />
+
+        <TextView
+            android:id="@+id/txtambillokasi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="&#xf304;"
+            android:fontFamily="@font/solid"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/ambillokasi"
+        android:id="@+id/ket"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Deskripsi"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/desk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/ubahaduan"
+        android:layout_below="@id/ket"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Ubah Aduan"
+        />
+
+</RelativeLayout>

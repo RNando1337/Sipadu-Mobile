@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".ResponsePetugas"
+            android:label="Detail Response"
+            android:parentActivityName=".ViewStatus"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ResponsePetugas" />
+        </activity>
+        <activity android:name=".TipePengadu"></activity>
+        <activity
+            android:name=".UbahEmail"
+            android:label="Ubah Email"
+            android:parentActivityName=".ValidasiPassword"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UbahEmail" />
+        </activity>
+        <activity
+            android:name=".ValidasiPassword"
+            android:label="Masukan Password"
+            android:parentActivityName=".Profile"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ValidasiPassword" />
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="Profile"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Profile" />
+        </activity>
+        <activity
+            android:name=".EditStatus"
+            android:label="Ubah Aduan"
+            android:parentActivityName=".Status"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EditStatus" />
+        </activity>
+        <activity
+            android:name=".ViewStatus"
+            android:label="Detail Aduan"
+            android:parentActivityName=".Status"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewStatus" />
+        </activity>
+        <activity
+            android:name=".ViewBerita"
+            android:label="Detail Informasi"
+            android:parentActivityName=".Berita"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Berita" />
+        </activity>
+        <activity
+            android:name=".Berita"
+            android:label="Informasi Terkini"
+            android:parentActivityName=".home"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Berita" />
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".home"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutUs" />
+        </activity>
+        <activity android:name=".home" />
+        <activity
+            android:name=".Atur_akun"
+            android:label="Ubah Password"
+            android:parentActivityName=".ValidasiPassword"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Atur_akun" />
+        </activity>
+        <activity
+            android:name=".Status"
+            android:label="Status Laporan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Status" />
+        </activity>
+        <activity
+            android:name=".pick_location"
+            android:label="Ambil Koordinat"
+            android:parentActivityName=".pelaporan"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pick_location" />
+        </activity>
+        <activity
+            android:name=".pick_location2"
+            android:label="Ambil Koordinat"
+            android:parentActivityName=".EditStatus"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pick_location2" />
+        </activity>
+        <activity
+            android:name=".pelaporan"
+            android:label="Lakukan Pengaduan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SecondaryTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pelaporan" />
+        </activity>
+        <activity android:name=".lupapass" />
+        <activity android:name=".pendaftaran" />
+        <activity android:name=".Login" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="35dp"
+    tools:context=".Profile">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Nama"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Nama Lengkap"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NIK"
+        android:layout_below="@id/Nama"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="NIK"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/IDPEL"
+        android:layout_below="@id/NIK"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="ID Pelanggan"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtIDPEL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="14"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/No_Hp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/IDPEL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="No. HP"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNo_HP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:inputType="phone"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Alamat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_below="@id/No_Hp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Alamat"
+        app:boxStrokeColor="@color/primary"
+        android:textColorHint="@color/primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/changemail"
+        android:layout_below="@+id/Alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/primary"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/txtChangemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah E-mail"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            />
+
+        <TextView
+            android:id="@+id/txtChangemail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="&#xf105;"
+            android:fontFamily="@font/solid"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/changepass"
+        android:layout_below="@+id/changemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/primary"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/txtChangepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah Password"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            />
+
+        <TextView
+            android:id="@+id/txtChangepass2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="&#xf105;"
+            android:fontFamily="@font/solid"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Simpan"
+        android:layout_below="@id/changepass"
+        android:layout_width="150dp"
+        android:backgroundTint="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Simpan"
+        />
+
+</RelativeLayout>

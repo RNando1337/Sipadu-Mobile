@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">siPadu</string>
+    <string name="access_token" translatable="false">pk.eyJ1Ijoicm5hbmRvIiwiYSI6ImNrbmd1em8ycTBnNnoydnBjMmtsM3FjaWQifQ.egkM3hOxWFSbQT7IHKBe1g</string>
+    <!--Basic user location permission toasts-->
+    <string name="user_location_permission_explanation">Aplikasi ini membutuhkan akses lokasi anda</string>
+    <string name="user_location_permission_not_granted">Anda tidak memberikan izin lokasi</string>
+
+    <!-- Location change listening -->
+    <string name="new_location">New lat: %1$s New longitude: %2$s</string>
+
+    <string name="visi">Menjadi Perusahaan Listrik Terkemuka se-Asia Tenggara dan #1 Pilihan Pelanggan untuk Solusi Energi.</string>
+    <string name="misi">
+        1. Menjalankan bisnis kelistrikan dan bidang lain yang terkait, berorientasi pada kepuasan pelanggan, anggota perusahaan dan pemegang saham. \n
+    2. Menjadikan tenaga listrik sebagai media untuk meningkatkan kualitas kehidupan masyarakat. \n
+    3. Mengupayakan agar tenaga listrik menjadi pendorong kegiatan ekonomi. \n
+    4. Menjalankan kegiatan usaha yang berwawasan lingkungan. \n
+    </string>
+
+    <string name="hotline">&#xf879; 123  &#160;&#160;&#160;&#160; &#xf0e0; pln123@pln.co.id</string>
+
+</resources>
